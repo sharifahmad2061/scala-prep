@@ -23,6 +23,9 @@ class Cat extends Speaker with TailWagger with Runner {
 }
 
 object Main extends App{
+    println(s"number of cli args: ${args.length}")
+    println(s"first arg: ${args(0)}")
+    // println(args(1))
     val dog = new Dog("shepy")
     val cat = new Cat()
     println(dog.speak())
