@@ -21,4 +21,7 @@ object Main extends App{
     ratings.foreach{
         case (movie, rating) => println(s"key: ${movie}, value: ${rating}")
     }
+    for ( (name, rating) <- ratings){
+        println(s"movie: ${name}, rating: ${rating}")
+    }
 }
