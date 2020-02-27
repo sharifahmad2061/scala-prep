@@ -1,6 +1,8 @@
 object Main extends App{
     val nums = Seq(1,2,3)
-    for (n <- nums ) println(n)
+    for (n <- nums ){
+        println(n)
+    }
     val people = List(
         "Bill", 
         "Candy", 
@@ -8,5 +10,7 @@ object Main extends App{
         "Leo", 
         "Regina"
     )
-    for (p <- people) println(p)
+    for (p <- people){
+        println(p)
+    }
 }
