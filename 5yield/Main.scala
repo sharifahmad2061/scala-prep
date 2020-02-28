@@ -3,9 +3,6 @@ object Main extends App{
     println("nums>" + nums.mkString(" "))
     val newnums = for(n <- nums) yield n * 2
     println("newnums>" + newnums.mkString(" "))
-    // val newnewnums = newnums.foreach{case _ => _ ** 2}
-    // println("newnewnums>" + newnewnums.mkString(" "))
-    // for(n <- nums )println(n)
     val names = List("_adam", "_david", "_frank")
     val newnames = for(name <- names) yield{
         val namewithoutunderscore = name.drop(1)
