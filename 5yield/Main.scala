@@ -16,4 +16,7 @@ object Main extends App{
             yield name.drop(1).toUpperCase()
     )
     .foreach(println)
+    println("---")
+    val newnewnames = names.map((name) =>  name.drop(1).toLowerCase())
+    println(newnewnames.mkString(" "))
 }
