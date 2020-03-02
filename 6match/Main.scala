@@ -39,4 +39,14 @@ object Main extends App {
   partyCount(1)
   partyCount(2)
   partyCount(4)
+  println("---")
+  def guessTheNumber(i: Int): Unit = i match {
+    case a if 0 to 9 contains a   => println("0-9 range: " + a)
+    case b if 10 to 19 contains b => println("10-19 range: " + b)
+    case c if 20 to 29 contains c => println("20-29 range: " + c)
+    case _                        => println("Hmmm...")
+  }
+  guessTheNumber(2)
+  guessTheNumber(45)
+  guessTheNumber(23)
 }
